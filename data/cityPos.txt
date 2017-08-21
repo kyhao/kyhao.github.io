@@ -1,0 +1,35 @@
+﻿<option value="0" class="m_a00">-请选择位置-</option>
+
+<option value="0" class="m_a11">-请选择位置-</option>
+<option value="1" class="m_a11">信科大厦</option>
+<option value="2" class="m_a11">明理9舍</option>
+<option value="3" class="m_a11">中心食堂</option>
+<option value="4" class="m_a11">信通学院</option>
+<option value="5" class="m_a11">神秘地点</option>
+
+<option value="0" class="m_a12">-请选择位置-</option>
+<option value="1" class="m_a12">万达广场</option>
+<option value="2" class="m_a12">四公里</option>
+<option value="3" class="m_a12">重庆会展中心</option>
+
+<option value="0" class="m_a13">-请选择位置-</option>
+<option value="1" class="m_a13">度假村</option>
+<option value="2" class="m_a13">加勒比海</option>
+<option value="3" class="m_a13">涂山公园</option>
+
+<option value="0" class="m_a14">-请选择位置-</option>
+<option value="1" class="m_a14">其他</option>
+
+<!--以下随意添加-->
+
+<option value="1" class="m_a21">解放碑</option>
+<option value="1" class="m_a22">大礼堂</option>
+<option value="1" class="m_a23">其他</option>
+
+<option value="1" class="m_a31">机场</option>
+<option value="1" class="m_a32">小区</option>
+<option value="1" class="m_a33">学校</option>
+<option value="1" class="m_a34">其他</option>
+
+<option value="0" class="m_a41">-请选择位置-</option>
+<option value="1" class="m_a41">其他</option>
