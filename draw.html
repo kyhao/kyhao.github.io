@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Draw</title>
+        <link rel="stylesheet" href="draw.css">
+    </head>
+    <body>
+    <div>
+    	<button id="back" onclick="pencil()">pen</button>
+    	<button id="b" onclick="line()">line</button>
+    	<button id="c" onclick="rect()">Rect</button>
+    	<button onclick="clearr()">clearRect</button>
+    </div>
+    <canvas id="mdraw" onmousemove="draw(event)" width="1000" height="500" onmousedown="drawbegin(event)" onmouseup="drawstop(event)"></canvas>
+	<div id="show"></div>
+	<a href="index.html"><button>BackToMain</button></a>
+    </body>
+
+    <script type="text/javascript" src="draw.js"></script>
+</html>
