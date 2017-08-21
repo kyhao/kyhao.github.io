@@ -44,7 +44,7 @@ var m_point = new Array;
 function loadJScript() {
 	var script = document.createElement("script");
 	//script.type = "text/javascript";
-	script.src = "http://api.map.baidu.com/api?v=2.0&ak=3YrL81zIjUUnMuczCGQS2ZcM0XAsLTo4&s=1&callback=init";
+	script.src = "http://api.map.baidu.com/api?v=2.0&ak=3YrL81zIjUUnMuczCGQS2ZcM0XAsLTo4&s=1&callback=init&s=1";
 	$('#m_main').append(script);
 }
 function init() {
