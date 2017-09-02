@@ -1,232 +1,63 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <title>首页</title>
+<html lang="en">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+   <title>Home</title>
+   <!-- Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+     <![endif]-->
+   <link rel="stylesheet" href="css/index.css">
+</head>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="mStyle.css"/>
-    <!--<script src="echarts.min.js"></script>-->
-  <body>
-  	<div class="container-fluid">
-  	<!--Header-->
-		<div id="m_head" class="navbar navbar-default row">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<img src="pic/logo.jpg" alt="logo">
-				</div>
-				<div>
-					<form class="navbar-form navbar-left" role="form" method="get" action="one.php">
-						<label for="m_sCity">重庆市</label>
-						<select class="form-control" name="m_sCity" id="m_sCity">
-							<option value="0">-请选择城市-</option>
-						</select>
-						<select class="form-control"  name="m_sArea" id="m_sArea">
-							<option value="0">-请选择区域-</option>
-						</select>
-						<select class="form-control" name="m_sPos" id="m_sPos">
-							<option value="0">-请选择位置-</option>
-						</select>
-						<input type="submit" class="btn btn-default" value="查询"/>
-					</form>
-					<button id="m_quit" type="button" class="btn btn-default navbar-right">退出登录</button>
-				</div>
-			</div>
-		</div>
-	
-		<!--Main-->
-		<div id="m_main" class="row">
-			<div id="m_cnav" class="col-sm-2">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a href="#"  class="m_nmain"><span class="glyphicon glyphicon-home m_navT"> 首页</span></a></li>
-					<li><a href="#" data-toggle="collapse" data-target="#m_nav1"><span class="glyphicon glyphicon-stats m_navT"> 数据分析</span></a>
-						<ul class="nav nav-pills nav-stacked collapse" id="m_nav1">
-							<li><a href="#" id="m_nchat">图表展示</a></li>
-							<li><a href="#">数据显示</a></li>
-						</ul>
-					</li>
-					<li><a href="#" data-toggle="collapse" data-target="#m_nav2"><span class="glyphicon glyphicon-flag m_navT"> 区域管理</span></a>
-						<ul class="nav nav-pills nav-stacked collapse" id="m_nav2">
-							<li><a href="#">区域列表</a></li>
-							<li><a href="#">新增</a></li>
-						</ul>
-					</li>
-					<li><a href="#" data-toggle="collapse" data-target="#m_nav3"><span class="glyphicon glyphicon-plane m_navT"> 地图管理</span></a>
-						<ul class="nav nav-pills nav-stacked collapse" id="m_nav3">
-							<li><a href="#" id="m_textDis">测距</a></li>
-							<li><a href="#" id="m_hideNode">打开关闭节点</a></li>
-						</ul>
-					</li>
-					<li><a href="#" data-toggle="collapse" data-target="#m_nav4"><span class="glyphicon glyphicon-link m_navT"> 数据关联</span></a>
-						<ul class="nav nav-pills nav-stacked collapse" id="m_nav4">
-							<li><a href="#" id="m_SenorShow">传感器列表</a></li>
-							<li><a href="#">添加传感器</a></li>
-							<li><a href="#" id="m_addNode">新增节点</a></li>
-						</ul>
-					</li>
-					<li><a href="#" data-toggle="collapse" data-target="#m_nav5"><span class="glyphicon glyphicon-cog m_navT"> 网站相关</span></a>
-						<ul class="nav nav-pills nav-stacked collapse" id="m_nav5">
-							<li><a href="#" data-toggle="modal" data-target="#mymodal-data">关于</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+<body>
+   <aside role="siderbar-nav">
+      <nav id="m_siderbar">
+         <ul>
+            <li><a href="#"><span class="glyphicon glyphicon-home m_siderbarsel"></span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-heart m_siderbarsel"></span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-calendar m_siderbarsel"></span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-pushpin m_siderbarsel"></span></a></li>
+         </ul>
+      </nav>
+   </aside>
+   <header>
+      <div class="container">
+         <h1><a href="#"><img src="img/logo1.jpg" alt="logo"></a></h1>
+      </div>
+      </div>
+   </header>
+   <main>
+      <div class="container">
+         <div>
+            <article>
+               <!-- <h1>The time <span>we together</span></h1> -->
+               <!-- <p>This is our area</p> -->
+               <h1>The time <span></span></h1>
+               <p>This is a time</p>
+            </article>
+            <div id="time">
+               <span class="days"><b>DAYS</b></span>
+               <span class="hours"><b>HOURS</b></span>
+               <span class="minutes"><b>MINUTES</b></span>
+               <span class="seconds"><b>SECONDS</b></span>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer></footer>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/timecounter.js"></script>>
 
-			<div id="m_map" class="col-sm-10">
-				<div id="allmap"></div>
-
-				<div id="m_mAddNode">
-					<ol class="breadcrumb">
-    					<li><a href="#" class="m_nmain">首页</a></li>
-   					 	<li><a href="#">数据关联</a></li>
-    					<li class="active">新增节点</li>
-					</ol>
-					<div class="panel panel-default">
-    				<div class="panel-body">
-					<form class="form-horizontal" role="form" id="m_mform">
-					 	<div class="form-group">
-						    <label for="pox_x" class="col-sm-2 control-label">输入x轴</label>
-						   	<div class="col-sm-10">
-						   	   	<input type="text" class="form-control" id="pox_x" name="pox_x" value="106.603373" placeholder="输入x轴">
-						    </div>
-						</div>
-						<div class="form-group">
-						    <label for="pox_y" class="col-sm-2 control-label">输入y轴</label>
-						    <div class="col-sm-10">
-						      	<input type="text" class="form-control" id="pox_y" name="pox_y" value="29.544475" placeholder="输入y轴">
-						    </div>
-						</div>
-						<div class="form-group">
-						    <label for="pox_id" class="col-sm-2 control-label">输入编号ID</label>
-						   	<div class="col-sm-10">
-						   	   	<input type="text" class="form-control" id="pox_id" name="pox_id" placeholder="输入编号ID">
-						    </div>
-						</div>
-						<div class="form-group">
-    						<div class="col-sm-offset-2 col-sm-10">
-      							<button type="button" class="btn btn-default" id="m_bAddNode">添加</button>
-   						 	</div>
-  						</div> 
-					</form>
-					</div>
-					</div>
-				</div>
-
-				<div id="m_mShowNode">
-					<ol class="breadcrumb">
-    					<li><a href="#" class="m_nmain">首页</a></li>
-   					 	<li><a href="#">数据关联</a></li>
-    					<li class="active">传感器列表</li>
-					</ol>					
-					<table class="table table-striped">
-						 <caption>传感器列表</caption>
-						 <thead>
-						    <tr>
-						      <th>传感器名称</th>
-						      <th>ID</th>
-						      <th>描述</th>
-						      <th>操作</th>
-						    </tr>
-						 </thead>
-						 <tbody>
-						    <tr>
-						      <td>温度传感器</td>
-						      <td>1</td>
-						      <td>测试温度的仪器</td>
-						      <td><span>修改</span> <a href="#"><span> 删除</span></a></td>
-						    </tr>
-						    <tr>
-						      <td>电表传感器</td>
-						      <td>2</td>
-						      <td>实时监控电表的数据</td>
-						      <td><span>修改</span> <a href="#"><span> 删除</span></a></td>
-						    </tr>
-						    <tr>
-						      <td>湿度传感器</td>
-						      <td>3</td>
-						      <td>测量环境的湿度</td>
-						      <td><span>修改</span> <a href="#"><span> 删除</span></a></td>
-						    </tr>
-						 </tbody>
-					</table>
-				</div>
-				<div id="m_mShowData"></div>
-			</div>
-
-
-		</div>
-	</div>
-
-	<!-- 模态弹出窗内容 -->
-	<div class="modal" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
- 		<div class="modal-dialog">
- 			<div class="modal-content">
- 				<div class="modal-header">
- 					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
- 					<h4 class="modal-title" id="modal_title">关于</h4>
- 				</div>
- 				<div class="modal-body" id="modal_body">
- 					<p><strong>你好，我好，大家好。<br/>版本号：V00.00.01</strong></p>
- 				</div>
- 				<div class="modal-footer">
- 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
- 				</div>
- 			</div>
- 		</div>
-	</div>
-
-	<div class="modal" id="my_login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
- 		<div class="modal-dialog">
- 			<div class="modal-content">
- 				<div class="modal-header">
- 					<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
- 					<h4 class="modal-title" id="modal_title_l">登录</h4>
- 				</div>
- 				<div class="modal-body" id="modal_body_l">
- 					<form class="form-horizontal" role="form" id="m_mlogin">
-					 	<div class="form-group">
-						    <label for="m_name" class="col-sm-4 control-label">输入用户名</label>
-						   	<div class="col-sm-6">
-						   	   	<input type="text" class="form-control" id="m_name" name="m_name" placeholder="输入用户名">
-						    </div>
-						</div>
-						<div class="form-group">
-						    <label for="m_pass" class="col-sm-4 control-label">输入密码</label>
-						    <div class="col-sm-6">
-						      	<input type="password" class="form-control" id="m_pass" name="m_pass" placeholder="输入密码">
-						    </div>
-						</div>
-					</form>
- 				</div>
- 				<div class="modal-footer">
- 					<button type="button" class="btn btn-default" id="m_blogin">登入</button>
- 					<button type="button" class="btn btn-default" id="m_bclose">关闭</button>
- 				</div>
- 			</div>
- 		</div>
-	</div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="mAction.js"></script>
-    <script>
-    	$(function ()  
-		{ $("#my_login").modal();  
-		});
-    </script>
-  </body>
 </html>
