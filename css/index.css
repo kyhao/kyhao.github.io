@@ -10,6 +10,8 @@ ul{list-style-type: none;padding: 0px;}
 .m_siderbarsel{color: white;margin-bottom: 66px; }
 .m_siderbarsel:hover{color: darkred;}
 
+.container{padding-left: 50px;}
+
 #time{font-size: 30px;}
 #time span{width: 60px;}
 #time span b{width:60px;border-top: 3px solid orange;font-size: 15px}
