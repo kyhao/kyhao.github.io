@@ -19,13 +19,13 @@
 </head>
 
 <body>
-   <aside role="siderbar-nav">
+   <aside>
       <nav id="m_siderbar">
          <ul>
-            <li><a href="#"><span class="glyphicon glyphicon-home m_siderbarsel"></span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-heart m_siderbarsel"></span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-calendar m_siderbarsel"></span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-pushpin m_siderbarsel"></span></a></li>
+            <li><a href="#" title="Home" id="nav_a"><span class="glyphicon glyphicon-home m_siderbarsel"></span></a></li>
+            <li><a href="#" title="Memery" id="nav_b"><span class="glyphicon glyphicon-heart m_siderbarsel"></span></a></li>
+            <li><a href="#" title="Calendar" id="nav_c"><span class="glyphicon glyphicon-calendar m_siderbarsel"></span></a></li>
+            <li><a href="#" title="Place" id="nav_d"><span class="glyphicon glyphicon-pushpin m_siderbarsel"></span></a></li>
          </ul>
       </nav>
    </aside>
@@ -33,23 +33,22 @@
       <div class="container">
          <h1><a href="#"><img src="img/logo1.jpg" alt="logo"></a></h1>
       </div>
-      </div>
    </header>
    <main>
       <div class="container">
          <div>
-            <article>
-               <!-- <h1>The time <span>we together</span></h1> -->
-               <!-- <p>This is our area</p> -->
-               <h1>The time <span></span></h1>
-               <p>This is a time</p>
-            </article>
-            <div id="time">
-               <span class="days"><b>DAYS</b></span>
-               <span class="hours"><b>HOURS</b></span>
-               <span class="minutes"><b>MINUTES</b></span>
-               <span class="seconds"><b>SECONDS</b></span>
-            </div>
+            <section class="m_section" id="a">
+               <article>
+                  <h1>The time <span>walk together</span></h1>
+                  <p>This is our area</p>
+               </article>
+               <div id="time">
+                  ShowTime
+               </div>
+            </section>
+            <section class="m_section" id="b">b</section>
+            <section class="m_section" id="c">c</section>
+            <section class="m_section" id="d">d</section>
          </div>
       </div>
    </main>
@@ -59,5 +58,6 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/timecounter.js"></script>>
+<script src="js/control.js"></script>
 
 </html>
