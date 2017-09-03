@@ -12,5 +12,10 @@ ul{list-style-type: none;padding: 0px;}
 .container{padding-left: 50px;}
 
 #time{font-size: 30px;}
+<<<<<<< HEAD
 #time span{display:inline-block;width: 65px;line-height: 68%;text-align: center;}
 #time span b{display:inline-block;width:65px;border-top: 3px solid orange;font-size: 15px;}
+=======
+#time span{width: 60px;}
+#time span b{width:60px;border-top: 3px solid orange;font-size: 15px}
+>>>>>>> origin/master
