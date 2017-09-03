@@ -11,15 +11,8 @@ ul{list-style-type: none;padding: 0px;}
 
 .container{padding-left: 50px;}
 
-<<<<<<< HEAD
 #time{font-size: 30px;padding-top: 60px;}
 #time span{display:inline-block;width: 65px;line-height: 68%;text-align: center;margin-right: 30px;}
 #time span b{display:inline-block;width:65px;border-top: 3px solid orange;font-size: 15px;}
 
 .m_section{display: none;}
-=======
-#time{font-size: 30px;}
-
-#time span{display:inline-block;width: 65px;line-height: 68%;text-align: center;}
-#time span b{display:inline-block;width:65px;border-top: 3px solid orange;font-size: 15px;}
->>>>>>> origin/master
