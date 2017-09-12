@@ -20,3 +20,5 @@ var timeC = new timecounter(display);
 m_t1 = setInterval(function() {
 	timeC.count();
 }, 1000);
+
+//count
